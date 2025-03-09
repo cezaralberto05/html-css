@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos ou aumente e diminua o zoom no navegador</p>
+
+    <picture>
+      
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+
+        <img src="imagens/grande.png" alt="imagem flexivel">
+        
+
+    </picture>
+
+    <!--a TAG picture é parecida com a TAG imagem so que ela tem varios source dentro, o elemento source é usado para especificar múltiplos recursos de mídia em elementos como <picture>, <audio>--->
+        
+    <!-- crie o source acima do outro sempre acima-->
+
+    <!--sempre adicione 50 px pra evitar a bara de rolagem-->
+
+    <h1>reproduzir audio</h1>
+    <p>vamos aprender a reproduzir o audio de duas maneiras</p>
+
+    <!--maneira um (depende muito do seu navegador)-->
+
+    <audio src="media/Dann Ramos - Golpe Preferido.mp3.lnk" controls autoplay></audio>
+
+    <!--mp3 wav ogg formatos reconhecidos-->
+    <!-- no meu caso nao funciono-->
+    <!--controls serve para aparecer os controles e autoplay para que se toque o audio-->
+
+    <p>segunda maneira</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/Dann Ramos - Golpe Preferido.mp3.lnk" type="audio/mpeg">
+        <p>infelizmente seu navegador nao consegue reproduzir audios, <a href="media/Dann Ramos - Golpe Preferido.mp3.lnk">clique aqui para fazer o download mp3</a></p>
+    </audio>
+
+    <!-- audio/mpeg para mp3 audio/ogg para ogg audio/wav para wave-->
+     <!-- preload auto so vai considerrar o site carregado quando tudo estiver carregado inclusive o audio e isso é ruim caso o arquivo seja pesado
+      meta data carrega apenas o nome do arquivo duração etc
+      none nao carrega nada ate que o usuario clique no arquivo-->
+      <!-- loop quando o audio acaba ele repete-->
+
+</body>
+</html>

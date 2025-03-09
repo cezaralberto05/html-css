@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links </title>
+    <style>
+
+        /* 
+            seletores personalizados
+             # = id
+            . = classe
+            : = pseudo-classe
+            :: = pseudo-elemento
+            > = childreen
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(9, 12, 201);
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a::after{
+            content: " link";
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/AlyssonMascarenhas/120-respostas-frontend" target="_blank">repositorio github</a></li>
+
+        <li><a href="https://www.youtube.com/" target="_blank">canal do youtube</a></li>
+
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/#google_vignette" target="_blank">side do cursoemvide</a></li>
+    </ul>
+</body>
+</html>
+
+<!-- pseudo classes : pseudos elementos ::-->

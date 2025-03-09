@@ -1,0 +1,35 @@
+@charset "TF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #034159, #025951, #02735E);
+}
+
+main{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 8px 8px 15px #025048c9;
+    width: 600px;
+   margin:auto;
+   padding: 80px;
+   
+}
+/*box shadow vai criar uma sobra onde o primeiro parametro é a sombra para direita, o segundo sombra pra baixo e o terceiro quanto a sombra espalha e por fim a cor*/
+h1{
+    color: #038C3E;
+    text-align: center;
+    text-shadow: 1px 1px 2px #036e31d8;
+}
+
+h2{
+    color: #0CF25D;
+    text-shadow: 1px 1px 0px #036e3167;
+}
+/*margin auto centraliza algo no meio da tela independente do tamanho e Padding é uma propriedade do CSS (Cascading Style Sheets) que define o espaçamento interno de um elemento HTML. O padding é a distância entre o conteúdo de um elemento e as suas bordas.*/
+
+
+p{
+    text-align: justify;
+}
